@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Web portfolio.css">
+</head>
+<body>
+    <button type="button" class="menu-button js-menu-trigger" aria-label="Click to open menu"></button>
+<div class="pen-title js-menu-trigger">
+  <h1>Magzhan Beketov</h1>
+  <div class="info">Welcome and Click here</div>
+</div>
+
+<div class="menu js-menu">
+  <div class="menu__item">
+    <div class="menu__item__bg-container"></div>
+    <div class="menu__item__content">
+      <a href="other/CV.html" class="btn-link">CV</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item__bg-container"></div>
+    <div class="menu__item__content">
+      <a href="other/Cover Letter.html" class="btn-link">Cover letter</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item__bg-container"></div>
+    <div class="menu__item__content">
+      <nav class="main-navigation">
+        <a class="main-navigation__link" href="CV.html">CV</a>
+        <a class="main-navigation__link" href="SWOT.html">Cover letter</a>
+        <a class="main-navigation__link" href="Video.html">Video tutorial</a>
+        <a class="main-navigation__link" href="Cover letter.html">SWOT analysis</a>
+      </nav>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item__bg-container"></div>
+    <div class="menu__item__content">
+      <a href="other/Video.html" class="btn-link">Video tutorial
+      </a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item__bg-container"></div>
+    <div class="menu__item__content">
+      <a href="other/SWOT.html" class="btn-link">SWOT analysis</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script>const penTitle = document.querySelector('.pen-title');
+    const menu = document.querySelector('.js-menu');
+    const menuTrigger = document.querySelectorAll('.js-menu-trigger');
+    menuTrigger.forEach(btn => {
+      btn.addEventListener('click', function() {
+        menuTrigger.forEach(b => {
+          b.classList.toggle('menu-trigger--menu-open');
+        });
+        menu.classList.toggle('menu--open');
+      });
+    });</script>
